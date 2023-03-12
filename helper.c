@@ -33,15 +33,15 @@ void DrawBoard(const int board[BOARDSIZE][BOARDSIZE], Font* font)
 
 void DrawWin(enum State winner, Font* fontBig, Font* font)
 {
-    DrawTextEx(*fontBig, winner == X ? "X" : "O", (Vector2){195, 88}, fontBig->baseSize, 2.0f, winner == X ? BLACK : WHITE);
-    DrawTextEx(*font, "WINNER!", (Vector2){32, 312}, font->baseSize, 2.0f, BLACK);
+    DrawTextEx(*fontBig, winner == X ? "X" : "O", WINPLAYER,fontBig->baseSize, 2.0f, winner == X ? BLACK : WHITE);
+    DrawTextEx(*font, "WINNER!", WINLABEL, font->baseSize, 2.0f, BLACK);
 }
 
 void DrawTie(Font* fontBig, Font* font)
 {
-    DrawTextEx(*fontBig, "X", (Vector2){118, 88}, fontBig->baseSize, 2.0f, BLACK);
-    DrawTextEx(*fontBig, "O", (Vector2){288, 88}, fontBig->baseSize, 2.0f, WHITE);
-    DrawTextEx(*font, "DRAW!", (Vector2){88, 312}, font->baseSize, 2.0f, BLACK);
+    DrawTextEx(*fontBig, "X", TIEX, fontBig->baseSize, 2.0f, BLACK);
+    DrawTextEx(*fontBig, "O", TIEO, fontBig->baseSize, 2.0f, WHITE);
+    DrawTextEx(*font, "DRAW!", TIELABEL, font->baseSize, 2.0f, BLACK);
 }
 
 Vector2 GetBoardLocation(const Vector2 mousePos)

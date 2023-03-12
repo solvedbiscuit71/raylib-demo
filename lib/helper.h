@@ -41,6 +41,14 @@ enum Status
     ONGOING
 };
 
+// Win & Tie
+#define WINPLAYER (Vector2){195, 88}
+#define WINLABEL (Vector2){32, 312}
+
+#define TIEX (Vector2){118, 88}
+#define TIEO (Vector2){288, 88}
+#define TIELABEL (Vector2){88, 312}
+
 // Macros
 #define WITHIN(x, i) x > (PADDING + LINEGAP * i) && x < (PADDING + LINEGAP * (i+1))
 
