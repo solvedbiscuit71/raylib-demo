@@ -1,9 +1,9 @@
-# raylib-demo
+# Getting started
 
-To get started, clone the repository
+Clone the repository
 ```bash
-git clone https://github.com/solvedbiscuit71/raylib-demo.git raylib-demo
-cd raylib-demo
+git clone https://github.com/solvedbiscuit71/raylib-x-or-o.git tic-tac-toe
+cd tic-tac-toe
 ```
 
 To compile and run (using clang)
